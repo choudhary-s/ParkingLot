@@ -3,10 +3,16 @@ package entity;
 public class Slot {
     int id;
     String vehicleId;
+    private VehicleType allowedType;
 
-    public Slot(int id, String vehicleId) {
+    public Slot(int id, String vehicleId, VehicleType allowedType) {
         this.id = id;
         this.vehicleId = vehicleId;
+        this.allowedType = allowedType;
+    }
+
+    public VehicleType getAllowedType() {
+        return allowedType;
     }
 
     public int getId() {
@@ -29,6 +35,7 @@ public class Slot {
     public String toString() {
         return "Slot{" +
                 "id=" + id +
+                ", allowedType=" + allowedType +
                 '}';
     }
 }
