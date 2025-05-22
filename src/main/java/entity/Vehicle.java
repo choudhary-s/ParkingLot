@@ -49,7 +49,7 @@ public abstract class Vehicle {
         this.numOfSlotsNeeded = numOfSlotsNeeded;
     }
 
-    public int getLevelParked() {
+    public Integer getLevelParked() { // Changed return type to Integer
         return levelParked;
     }
 
